@@ -1,26 +1,12 @@
 # Add  code here!
 
-
 def prime?(numbers)
-  if (2..numbers/2).none? do |x|
+  if numbers <= 1
+    return false
+  elsif numbers <= 3
+    return true
+  else (2..numbers/2).none? do |x|
     numbers % x == 0
   end
-  true
-  elsif numbers <= 1
-    return false
-  else numbers <= 2
-    return true
   end
-
 end
-
-# def prime?(numbers)
-#   if numbers <= 1
-#     return false
-#   elsif numbers <= 2
-#     return true
-#   else (2..numbers/2).none? do |x|
-#     numbers % x == 0
-#   end
-#   end
-# end
